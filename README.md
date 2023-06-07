@@ -3,12 +3,12 @@ This project is a REST API built using FastAPI, a modern, fast (high-performance
 
 ## Features
 
-* [Listing Trades] : Fetch a list of trades with support for pagination and sorting.
-* [Single Trade] : Retrieve a single trade by its ID.
-* [Searching Trades] : Search for trades using query parameters to filter by counterparty, instrument ID, instrument name, and trader.
-* [Advanced Filtering] : Filter trades by asset class, trade date-time range, trade type (buy or sell), and price range.
-* [Pagination and Sorting] : Supports pagination with customizable page size and sorting based on various trade attributes.
-* [Mocked Database] : Implements a mocked database interaction layer to generate random trade data for testing and demonstration purposes.
+* __Listing Trades__ : Fetch a list of trades with support for pagination and sorting.
+* __Single Trade__ : Retrieve a single trade by its ID.
+* __Searching Trades__ : Search for trades using query parameters to filter by counterparty, instrument ID, instrument name, and trader.
+* __Advanced Filtering__ : Filter trades by asset class, trade date-time range, trade type (buy or sell), and price range.
+* __Pagination and Sorting__ : Supports pagination with customizable page size and sorting based on various trade attributes.
+* __Mocked Database__ : Implements a mocked database interaction layer to generate random trade data for testing and demonstration purposes.
 
 ## Technologies Used
 FastAPI: A modern, fast (high-performance), web framework for building APIs with Python.
