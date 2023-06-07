@@ -1,4 +1,4 @@
-Trade API with FastAPI
+## Trade API with FastAPI
 This project is a REST API built using FastAPI, a modern, fast (high-performance), web framework for building APIs with Python. The API serves trade data from a mocked database and provides various endpoints for retrieving, searching, and filtering trades.
 
 Features
