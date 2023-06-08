@@ -1,0 +1,57 @@
+Solution Documentation:
+
+Trade Data REST API - Solution and Approach
+
+Overview:
+The Trade Data REST API is built using the FastAPI framework in Python. It provides endpoints for managing and retrieving trade data from a mocked database. 
+This document outlines the solution implemented and the reasoning behind the chosen approach.
+
+Solution Description:
+1. Endpoints:
+   - `/trades/{trade_id}`: Retrieves a single trade by its ID.
+   - `/trades`: Fetches a list of trades with support for searching and filtering.
+
+2. Mocked Database:
+   - A mocked database interaction layer is implemented to generate random trade data for testing purposes.
+   - The `generate_random_trade` function generates random trade objects based on provided schema models.
+   - A list of mocked trades (`mocked_db`) is created by calling `generate_random_trade` multiple times.
+
+3. Pydantic Models:
+   - Two Pydantic models, `TradeDetails` and `Trade`, are defined to represent the schema of a single trade and the list of trades, respectively.
+   - These models include appropriate field definitions and descriptions for the trade data.
+
+4. Filtering and Searching:
+   - The `/trades` endpoint supports optional query parameters for filtering and searching trades.
+   - The query parameters are used to filter trades based on asset class, trade date, price range, trade type, and search terms.
+   - Trades are filtered iteratively based on the provided parameters to retrieve the desired subset of trades.
+
+5. Sorting and Pagination:
+   - Sorting and pagination are supported to enhance the usability of the API.
+   - Trades can be sorted based on a specified field (ascending or descending) using the `sort` query parameter.
+   - Pagination is implemented using the `page` and `limit` query parameters to retrieve a specific subset of trades.
+
+Reasoning and Approach:
+1. FastAPI Framework:
+   - FastAPI is chosen as the framework due to its high performance, simplicity, and ease of use.
+   - FastAPI supports automatic generation of API documentation, request validation, and data serialization, making development efficient.
+
+2. Pydantic for Data Modeling:
+   - Pydantic is used to define the schema models for the trade data.
+   - Pydantic provides type checking, data validation, and automatic documentation generation, ensuring robustness and maintainability.
+
+3. Mocked Database:
+   - A mocked database layer is implemented to generate random trade data for testing and development purposes.
+   - This approach allows for quick prototyping and testing without the need for a real database connection.
+
+4. Filtering and Searching:
+   - The filtering and searching functionality is crucial for retrieving specific trades based on user-defined criteria.
+   - The chosen approach iteratively filters trades based on the provided query parameters to ensure accurate and efficient retrieval.
+
+5. Sorting and Pagination:
+   - Sorting and pagination enhance the usability of the API, allowing users to control the order and quantity of the returned trade data.
+   - Sorting is implemented by applying the `sorted` function with the desired field as the sorting key.
+   - Pagination is achieved by calculating the start and end indices based on the provided `page` and `limit` parameters.
+
+In summary, the Trade Data REST API is implemented using FastAPI, Pydantic models, and a mocked database layer. 
+The solution provides endpoints for managing and retrieving trade data, with support for filtering, searching, sorting, and pagination. 
+This approach ensures flexibility, performance, and maintainability in handling trade data.
