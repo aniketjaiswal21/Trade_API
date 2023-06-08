@@ -22,7 +22,7 @@ To get started with the project:
 * Clone the repository: git clone <repository-url>
 * Install the project dependencies: pip install -r requirements.txt
 * Run the API server: python main.py
-* Access the API endpoints locally: http://localhost:8000/
+* Access the API endpoints locally: http://localhost:8000/docs
 * For detailed documentation on the API endpoints, usage examples, and query parameters, refer to the API Documentation file.
   
 ## Contributions
