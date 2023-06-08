@@ -27,3 +27,8 @@ To get started with the project:
   
 ## Contributions
 Contributions are welcome! If you find any issues, have suggestions for improvements, or want to add new features, feel free to open an issue or submit a pull request.
+![time_based_search](https://github.com/aniketjaiswal21/Trade_API/assets/113088338/5e9e4bad-38ef-4201-933e-3328aa8fbc32)
+  
+![trade_search_query](https://github.com/aniketjaiswal21/Trade_API/assets/113088338/e40c41fb-a85a-4db2-ba78-e1683a1d693a)
+  
+![id_based_search](https://github.com/aniketjaiswal21/Trade_API/assets/113088338/390b760d-70da-4968-abde-d5914cc9d973)
